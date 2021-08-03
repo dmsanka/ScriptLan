@@ -1,0 +1,80 @@
+{
+	// Place your snippets for shellscript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+// adding Shebang	
+	"add a shebang":{
+		"prefix" : "shebang",
+		"body" : [
+			"#!/bin/bash"
+		],
+		    "description" : "Add shebang to script"
+	},
+// adding Shell colour Variables
+	"add a colour black":{
+			"prefix": "black",
+			"body": [
+				"\\033[30m"
+			],
+			"description": "Add colour black to script"
+	},
+	"add a colour red":{
+			"prefix": "red",
+			"body": [
+				"\\033[31m"
+			],
+			"description": "Add colour red to script"
+	},
+	"add a colour green":{
+			"prefix": "green",
+			"body": [
+				"\\033[32m"
+			],
+			"description": "Add colour green to script"
+	},
+	"add a colour brown":{
+			"prefix": "brown",
+			"body": [
+				"\\033[33m"
+			],
+			"description": "Add colour brown to script"
+	},
+	"add a colour blue":{
+			"prefix": "blue",
+			"body": [
+				"\\033[34m"
+			],
+			"description": "Add colour blue to script"
+	},
+	"add a colour purple":{
+			"prefix": "purple",
+			"body": [
+				"\\033[35m"
+			],
+			"description": "Add colour purple to script"
+	},
+	"add a colour cyan":{
+			"prefix": "cyan",
+			"body": [
+				"\\033[36m"
+			],
+			"description": "Add colour cyan to script"
+	},
+	"add a colour grey":{
+			"prefix": "grey",
+			"body": [
+				"\\033[37m"
+			],
+			"description": "Add colour grey to script"
+	}	
+}
