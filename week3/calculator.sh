@@ -4,13 +4,15 @@
 # SCRIPT NAME   :       calculator.sh
 # AUTHOR        :       Sanka Dissanayake
 # DATE          :       26/07/2021      
-# VERSION       :       1.00
+# VERSION       :       2.00
 # DESCRITION    :       Prompt user to enter two numbers & then perform selected option
+# CHANGERS	:	By Sanka D 0n 17/08/2021
+#			Remove debuging mode & Replace Word "FIRST" with "SECOND" at Line 15    	
 ####################################################################################################
 
 # Prompt user to enter numbers
 read -p "Enter First Number : " n1
-read -p "Enter First Number : " n2
+read -p "Enter Second Number : " n2
 
 # Creating a option Menu
 echo "Select Your option 
