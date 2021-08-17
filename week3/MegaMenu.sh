@@ -4,12 +4,14 @@
 # SCRIPT NAME   :       MegaMenu.sh
 # AUTHOR        :       Sanka Dissanayake
 # DATE          :       27/07/2021
-# VERSION       :       2.00
+# VERSION       :       3.00
 # DESCRITION    :       User able to access menu option and preform activities if user correctly enter their password
 # CHANGERS      :       by Sanka D on 27/07/2021
 #                       Change the name of the script
 #                       Add more options to Menu
 #                       Script improved with colours & more options
+#       	:       By Sanka D 0n 17/08/2021
+# BUG FIXED             Add Line 51 to change the directory back to Week3 
 ####################################################################################################################
 
 #####################################################################################
@@ -44,9 +46,9 @@ pswd_hash=`echo "$pswd" | sha256sum`
 #Verify entred hashed password and stored hashed passowrd
 if [ "$pswd_hash" == "$(cat ./secret.txt)"  ]
 then
-  echo -e "\033[36mAccess Granted\033[0m"
-
-
+	echo -e "\033[36mAccess Granted\033[0m"
+#change directory to Week3 
+cd ~/student/scripts/portfolio/week3/ 
 #####################################################################################
 # Creating Colourful Option Menu to Access selected options until EXIT             #
 #####################################################################################
@@ -84,19 +86,19 @@ case $options in
         3)
                 /home/sdissana/student/scripts/portfolio/week2/setPassword.sh
                 ;;
-    4)
+	4)
                 ./calculator.sh
                 ;;
         5)
                 ./megafoldermaker.sh
                 ;;
-    6)
+    	6)
                 ./filenames.sh filenames.txt
                 ;;
-    7)
+    	7)
                 ./Internetdownloader.sh
                 ;;
-    8)
+    	8)
                 echo "Goodbye"
                 exit
                 ;;
